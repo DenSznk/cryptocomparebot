@@ -43,6 +43,7 @@ def check_action(message):
             else:
                 text = f'Price {amount} {quote} in {base} - {total_base}'
 
+
                 bot.send_message(message.chat.id, text)
 
 

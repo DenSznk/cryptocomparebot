@@ -36,8 +36,6 @@ def check_action(message):
 
                 quote, base, amount = values
                 total_base = CurrencyConvertor.convert(quote, base, amount)
-                # if amount <= 0:
-                #     raise ConvertingExceptions('Invalid input format.')
             except ConvertingExceptions as e:
                 bot.reply_to(message, f'User error.\n{e}')
             except Exception as e:

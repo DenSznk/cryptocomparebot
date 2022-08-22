@@ -1,4 +1,9 @@
-TOKEN = '5311109666:AAHJstToqAnVSh_GQHBfz-UBGw5luQNIBkM'
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TOKEN = os.getenv('TOKEN')
 
 currencies_names = {
     'dollar': 'USD',
